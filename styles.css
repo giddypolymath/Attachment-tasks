@@ -1,0 +1,94 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.red-card {
+  background-color: #e63946; /* Red color from the screenshot */
+}
+
+.blue-card {
+  background-color: #0096c7; /* Blue color from the screenshot */
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.product-description {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buy-now {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buy-now:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.favorite-icon {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.favorite-icon:hover {
+  color: #ffd700; /* Gold color for the hover effect */
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
